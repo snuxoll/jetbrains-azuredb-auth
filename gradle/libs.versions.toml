@@ -9,7 +9,7 @@ kotlin = "1.9.25"
 kover = "0.8.3"
 qodana = "2024.3.4"
 azure = "1.2.32"
-reactorCoroutines = "1.8.1"
+reactorCoroutines = "1.10.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
