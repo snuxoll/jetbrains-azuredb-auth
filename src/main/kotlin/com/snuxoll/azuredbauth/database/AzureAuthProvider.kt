@@ -114,6 +114,7 @@ class AzureAuthProvider : DatabaseAuthProvider {
     ): DatabaseAuthProvider.ApplicabilityLevel.Result =
         when (point.dbms) {
             Dbms.POSTGRES -> DatabaseAuthProvider.ApplicabilityLevel.Result.APPLICABLE
+            Dbms.MYSQL -> DatabaseAuthProvider.ApplicabilityLevel.Result.APPLICABLE
             else -> DatabaseAuthProvider.ApplicabilityLevel.Result.NOT_APPLICABLE
         }
 
